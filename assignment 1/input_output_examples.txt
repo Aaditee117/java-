@@ -1,0 +1,36 @@
+Problem 1: String Analysis
+Input: Enter a string: Hello World 2024!
+Output: Vowels: 3
+        Consonants: 7
+        Digits: 4
+        Special Characters: 3
+
+Problem 2: Matrix Operations
+Input:  Matrix 1:-
+        1 2
+        3 4
+        Matrix 2:-
+        5 6
+        7 8
+Output: Addition:-
+        6  8
+        10 12
+
+        Subtraction:-
+        -4 -4
+        -4 -4
+        
+        Multiplication:-
+        19 22
+        43 50
+
+Problem 3: Basic Banking System
+Input:  Create Account:
+        Name: John Doe
+        Account Number: 12345
+        Initial Balance: 1000
+
+        Deposit: 500
+        Withdraw: 2000
+Output: Deposit successful! Current Balance: 1500
+        Error: Insufficient funds. Current Balance: 1500
