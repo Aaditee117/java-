@@ -1,50 +1,57 @@
-Problem 1: Product Class
-Input:  Product ID: 101
-        Name: Laptop
-        Price: 75000
-Output: Product Details:-
-        ID: 101
-        Name: Laptop
-        Price: 75000
+Problem 1: Sorting Employees (Easy Level)
+    Description: Write a Java program to sort a list of Employee objects using lambda expressions. 
+    Each Employee object should have the following attributes:
 
-Problem 2: Library Management System
-Input:  Book 1:
-        Type: Fiction
-        Title: Harry Potter
-        Author: J.K. Rowling
-        Price: 500
+INPUT:
+    List<Employee> employees = Arrays.asList(
+        new Employee("John", 30, 50000),
+        new Employee("Alice", 25, 60000),
+        new Employee("Bob", 35, 45000)
+    );
 
-        Book 2:
-        Type: Non-Fiction
-        Title: Sapiens
-        Author: Yuval Noah Harari
-        Price: 700
-Output: Fiction Book Details:-
-        Title: Harry Potter
-        Author: J.K. Rowling
-        Price: 500
+OUTPUT:
+    Employee{name='Bob', age=35, salary=45000.0}
+    Employee{name='John', age=30, salary=50000.0}
+    Employee{name='Alice', age=25, salary=60000.0}
 
-        Non-Fiction Book Details:-
-        Title: Sapiens
-        Author: Yuval Noah Harari
-        Price: 700
 
-Problem 3: Student Information System
-Input:  Add Student:
-        Name: Alice
-        Age: 20
-        Roll Number: 101
+Problem 2: Filtering and Sorting Students (Medium Level)
+    Description: Create a Java program that uses lambda expressions and stream operations to:
+    a-> Filter students who scored above 75%
+    b-> Sort them by marks in descending order
+    c-> Display their names
 
-        Add Teacher:
-        Name: Mr. Smith
-        Age: 40
-        Subject: Mathematics
-Output: Student Details:
-        Name: Alice
-        Age: 20
-        Roll Number: 101
+INPUT:
+    List<Student> students = Arrays.asList(
+        new Student("Emma", 85),
+        new Student("Liam", 72),
+        new Student("Olivia", 90),
+        new Student("Noah", 78)
+    );
 
-        Teacher Details:
-        Name: Mr. Smith
-        Age: 40
-        Subject: Mathematics
+OUTPUT:
+    Olivia
+    Emma
+    Noah
+
+
+Problem 3: Processing a Large Dataset of Products (Hard Level)
+    Description: Write a Java program to process a dataset of products using streams. Perform the following operations:
+    a-> Group products by category
+    b-> Find the most expensive product in each category
+    c-> Calculate the average price of all products
+
+INPUT:
+    List<Product> products = Arrays.asList(
+        new Product("Laptop", "Electronics", 75000),
+        new Product("Smartphone", "Electronics", 50000),
+        new Product("Table", "Furniture", 10000),
+        new Product("Chair", "Furniture", 5000)
+    );
+
+OUTPUT:
+    Most Expensive Product per Category:
+    Electronics: Laptop (75000.0)
+    Furniture: Table (10000.0)
+
+    Average Price of All Products: 35000.0

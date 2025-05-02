@@ -1,96 +1,99 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/lkZKXiW4)
-🚀 Experiment 7: JDBC (Java Database Connectivity)
+# Java Programming Assignment
 
-📌 Objective
+## 📚 Topics Covered:
+- Lambda Expressions
+- Java Streams API
+- Collections Framework
 
-The objective of this experiment is to explore JDBC (Java Database Connectivity) for connecting and interacting with relational databases in Java. Students will implement solutions to given problems of varying difficulty levels to strengthen their understanding of database handling, CRUD operations, and MVC architecture.
+## 📝 Problem Statements
 
-📜 Assignment Details
+### ✅ Problem 1: Sorting Employees (Easy Level)
+#### Description:
+Write a Java program to sort a list of Employee objects using lambda expressions. Each Employee object should have the following attributes:
+- `name` (String)
+- `age` (int)
+- `salary` (double)
 
-The assignment consists of three problems: Easy, Medium, and Hard levels. Each question is designed to enhance your understanding of JDBC, SQL queries, and database transaction management.
+#### Example Input:
+```java
+List<Employee> employees = Arrays.asList(
+    new Employee("John", 30, 50000),
+    new Employee("Alice", 25, 60000),
+    new Employee("Bob", 35, 45000)
+);
+```
 
-🟢 Easy Level: Fetch Data from a MySQL Database
+#### Example Output:
+```
+Employee{name='Bob', age=35, salary=45000.0}
+Employee{name='John', age=30, salary=50000.0}
+Employee{name='Alice', age=25, salary=60000.0}
+```
 
-Problem Statement:
+---
 
-Create a Java program to connect to a MySQL database and fetch data from a single table.
+### ✅ Problem 2: Filtering and Sorting Students (Medium Level)
+#### Description:
+Create a Java program that uses lambda expressions and stream operations to:
+1. Filter students who scored above 75%
+2. Sort them by marks in descending order
+3. Display their names
 
-The program should:
+#### Example Input:
+```java
+List<Student> students = Arrays.asList(
+    new Student("Emma", 85),
+    new Student("Liam", 72),
+    new Student("Olivia", 90),
+    new Student("Noah", 78)
+);
+```
 
-Use DriverManager and Connection objects.
+#### Example Output:
+```
+Olivia
+Emma
+Noah
+```
 
-Retrieve and display all records from a table named Employee with columns EmpID, Name, and Salary.
+---
 
-Expected Learning Outcomes:
+### ✅ Problem 3: Processing a Large Dataset of Products (Hard Level)
+#### Description:
+Write a Java program to process a dataset of products using streams. Perform the following operations:
+1. Group products by category
+2. Find the most expensive product in each category
+3. Calculate the average price of all products
 
-Connecting Java with MySQL using JDBC.
+#### Example Input:
+```java
+List<Product> products = Arrays.asList(
+    new Product("Laptop", "Electronics", 75000),
+    new Product("Smartphone", "Electronics", 50000),
+    new Product("Table", "Furniture", 10000),
+    new Product("Chair", "Furniture", 5000)
+);
+```
 
-Executing SELECT queries.
+#### Example Output:
+```
+Most Expensive Product per Category:
+Electronics: Laptop (75000.0)
+Furniture: Table (10000.0)
 
-Fetching and displaying database records.
+Average Price of All Products: 35000.0
+```
 
-📍 Hint: Use ResultSet and Statement to execute SQL queries.
+---
 
-🟡 Medium Level: CRUD Operations on a Database Table
+## 🛠 Requirements:
+- Java 8 or above
+- IDE (Eclipse / IntelliJ / VS Code)
 
-Problem Statement:
+## 📌 Notes:
+- The assignment covers key Java concepts such as Lambda Expressions, Streams, and Collection Framework operations.
+- Sorting, filtering, and aggregations are performed using modern Java features.
+- The problems help reinforce Java fundamentals through practical implementation.
 
-Build a Java program to perform CRUD operations (Create, Read, Update, Delete) on a database table Product with columns:
+📢 *This assignment provides hands-on experience with Java collections and stream processing. Feel free to enhance and customize the solutions!* 🚀
 
-ProductID
-
-ProductName
-
-Price
-
-Quantity
-
-The program should include:
-
-Menu-driven options for each CRUD operation.
-
-Transaction handling to ensure data integrity.
-
-Expected Learning Outcomes:
-
-Implementing INSERT, SELECT, UPDATE, and DELETE queries in Java.
-
-Using PreparedStatement for parameterized queries.
-
-Implementing transaction management with commit() and rollback().
-
-📍 Hint: Use Scanner for input and try-catch-finally for handling exceptions.
-
-🔴 Hard Level: Student Management System using JDBC and MVC
-
-Problem Statement:
-
-Develop a Java application using JDBC and MVC architecture to manage student data.
-
-The application should:
-
-Use a Student class as the model with fields:
-
-StudentID
-
-Name
-
-Department
-
-Marks
-
-Include a database table to store student data.
-
-Allow users to perform CRUD operations through a simple menu-driven view.
-
-Implement database operations in a separate controller class.
-
-Expected Learning Outcomes:
-
-Understanding MVC architecture in Java applications.
-
-Implementing modular database handling using a controller class.
-
-Performing CRUD operations efficiently using JDBC.
-
-📢 Happy Coding! 🚀
